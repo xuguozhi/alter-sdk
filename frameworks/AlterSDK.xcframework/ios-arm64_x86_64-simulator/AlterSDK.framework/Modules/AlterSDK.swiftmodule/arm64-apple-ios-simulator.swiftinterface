@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AlterSDK
+import AlterCore
+import CoreMedia
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var shouldAutorotate: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredInterfaceOrientationForPresentation: UIKit.UIInterfaceOrientation {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum FaceTrackerUse {
+  case always, onDemand, never
+  public static func == (a: AlterSDK.FaceTrackerUse, b: AlterSDK.FaceTrackerUse) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class AvatarDesigner {
+  final public let avatarFactory: AlterCore.AvatarFactory
+  final public let cameraTracker: AlterCore.Future<AlterCore.CameraTrackerController?>
+  public var stopTrackerWhenDesignerCloses: Swift.Bool
+  public var currentTracker: AlterCore.CameraTrackerController? {
+    get
+  }
+  public func showDesigner(_ initialAvatar: AlterCore.AvatarMatrix? = nil) -> AlterCore.Future<AlterCore.AvatarMatrix?>
+  public func getRandomAvatarMatrix() -> AlterCore.Future<AlterCore.Try<AlterCore.AvatarMatrix>>
+  public static func create(_ parent: UIKit.UIViewController, _ apiKey: Swift.String, faceTrackerUse: AlterSDK.FaceTrackerUse = .onDemand) -> AlterCore.Try<AlterSDK.AvatarDesigner>
+  public static func createTest(_ parent: UIKit.UIViewController, _ apiKey: Swift.String, faceTrackerUse: AlterSDK.FaceTrackerUse = .onDemand, dataVersion: Swift.String? = nil) -> AlterCore.Try<AlterSDK.AvatarDesigner>
+  public static func create(_ parent: UIKit.UIViewController, _ avatarFactory: AlterCore.AvatarFactory, faceTrackerUse: AlterSDK.FaceTrackerUse = .onDemand) -> AlterSDK.AvatarDesigner
+  public static func create(_ parent: UIKit.UIViewController, _ avatarFactory: AlterCore.AvatarFactory, _ tracker: AlterCore.Future<AlterCore.CameraTrackerController?>, _ designerLogic: AlterCore.Future<AlterCore.Try<AlterCore.AvatarDesignerLogic>>? = nil) -> AlterSDK.AvatarDesigner
+  public static func create(_ parent: UIKit.UIViewController, _ avatarFactory: AlterCore.AvatarFactory, _ tracker: AlterCore.Future<AlterCore.Try<AlterCore.CameraTrackerController>>, _ designerLogic: AlterCore.Future<AlterCore.Try<AlterCore.AvatarDesignerLogic>>? = nil) -> AlterSDK.AvatarDesigner
+  @objc deinit
+}
+public let AVATAR_FIT_SCALE: Swift.Float
+extension Dispatch.DispatchQueue {
+  public func asyncDeduped(target: Swift.AnyObject, after delay: Foundation.TimeInterval, execute work: @escaping @convention(block) () -> Swift.Void)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PresetsViewController : AlterSDK.BaseViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc deinit
+}
+extension AlterSDK.PresetsViewController : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+extension AlterSDK.FaceTrackerUse : Swift.Equatable {}
+extension AlterSDK.FaceTrackerUse : Swift.Hashable {}

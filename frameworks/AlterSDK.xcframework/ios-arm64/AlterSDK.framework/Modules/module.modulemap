@@ -1,0 +1,4 @@
+framework module AlterSDK {
+  header "AlterSDK-Swift.h"
+  requires objc
+}

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "alter-core",
+        "repositoryURL": "https://github.com/facemoji/alter-core/",
+        "state": {
+          "branch": null,
+          "revision": "7724e552df3baf33b0f9e70b2bb05e4db06c49e7",
+          "version": "0.14.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

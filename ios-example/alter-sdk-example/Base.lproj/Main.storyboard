@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0PF-Iy-CCo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Ms0-hj-kiV">
+            <objects>
+                <viewController id="0PF-Iy-CCo" customClass="MainViewController" customModule="alter_sdk_test_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZP-dx-0AX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYf-ru-IUD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="534"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-1w-s2r">
+                                        <rect key="frame" x="197" y="257" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Foa-1w-s2r" firstAttribute="centerX" secondItem="kYf-ru-IUD" secondAttribute="centerX" id="2Dd-DM-ugp"/>
+                                    <constraint firstItem="Foa-1w-s2r" firstAttribute="centerY" secondItem="kYf-ru-IUD" secondAttribute="centerY" id="d7p-3f-a2N"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatar Designer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1m-aF-inB">
+                                <rect key="frame" x="0.0" y="610" width="414" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human experience of Alter SDK that you can easily integrate into your app to let users create avatars." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBe-N8-oGJ" userLabel="Choose existing one and customize it however you want.">
+                                <rect key="frame" x="32" y="669" width="350" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" name="black3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWD-s2-zjX" userLabel="BtnQ" customClass="RoundedButton" customModule="alter_sdk_test_ios" customModuleProvider="target">
+                                <rect key="frame" x="358" y="60" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Xtd-IO-iOp"/>
+                                    <constraint firstAttribute="width" constant="40" id="hWq-x5-LKD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="icon_questionmark"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onInfoClick:" destination="0PF-Iy-CCo" eventType="touchUpInside" id="eow-Ql-mn4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHV-yq-vAm" customClass="RoundedButton" customModule="alter_sdk_test_ios" customModuleProvider="target">
+                                <rect key="frame" x="152.5" y="737" width="109" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="UQu-jp-uq6"/>
+                                    <constraint firstAttribute="width" constant="109" id="y1v-CU-Xkk"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="icon_arrow"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onOpenDesignerClick:" destination="0PF-Iy-CCo" eventType="touchUpInside" id="p9f-bP-FhG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="noU-DU-U70"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kYf-ru-IUD" firstAttribute="leading" secondItem="noU-DU-U70" secondAttribute="leading" id="1eu-xc-Hjr"/>
+                            <constraint firstAttribute="trailing" secondItem="D1m-aF-inB" secondAttribute="trailing" id="AJP-xa-vDs"/>
+                            <constraint firstItem="D1m-aF-inB" firstAttribute="top" secondItem="kYf-ru-IUD" secondAttribute="bottom" constant="32" id="AUi-db-MJF"/>
+                            <constraint firstItem="YHV-yq-vAm" firstAttribute="top" secondItem="LBe-N8-oGJ" secondAttribute="bottom" constant="32" id="FUb-Yr-Mrq"/>
+                            <constraint firstItem="YWD-s2-zjX" firstAttribute="top" secondItem="noU-DU-U70" secondAttribute="top" constant="16" id="YSy-L4-iMf"/>
+                            <constraint firstItem="noU-DU-U70" firstAttribute="trailing" secondItem="YWD-s2-zjX" secondAttribute="trailing" constant="16" id="aPf-VA-B7Y"/>
+                            <constraint firstItem="D1m-aF-inB" firstAttribute="leading" secondItem="noU-DU-U70" secondAttribute="leading" id="fnL-Ux-qko"/>
+                            <constraint firstItem="LBe-N8-oGJ" firstAttribute="top" secondItem="D1m-aF-inB" secondAttribute="bottom" constant="16" id="hiN-if-DeC"/>
+                            <constraint firstItem="kYf-ru-IUD" firstAttribute="top" secondItem="noU-DU-U70" secondAttribute="top" id="iAs-vf-EVQ"/>
+                            <constraint firstItem="noU-DU-U70" firstAttribute="bottom" secondItem="YHV-yq-vAm" secondAttribute="bottom" constant="16" id="jIQ-ic-oIj"/>
+                            <constraint firstAttribute="trailing" secondItem="LBe-N8-oGJ" secondAttribute="trailing" constant="32" id="k2B-LI-d2g"/>
+                            <constraint firstItem="LBe-N8-oGJ" firstAttribute="leading" secondItem="noU-DU-U70" secondAttribute="leading" constant="32" id="m1S-vx-hv8"/>
+                            <constraint firstItem="YHV-yq-vAm" firstAttribute="centerX" secondItem="QZP-dx-0AX" secondAttribute="centerX" id="omu-4F-Z1g"/>
+                            <constraint firstItem="noU-DU-U70" firstAttribute="trailing" secondItem="kYf-ru-IUD" secondAttribute="trailing" id="xlv-7S-Gjc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oZD-39-GFv"/>
+                    <connections>
+                        <outlet property="avatarViewContainer" destination="kYf-ru-IUD" id="lxJ-KD-cMe"/>
+                        <outlet property="btnOpenDesigner" destination="YHV-yq-vAm" id="qXP-NZ-tU9"/>
+                        <outlet property="viewActivityIndicator" destination="Foa-1w-s2r" id="nyD-uy-fby"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZI-f7-Bna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="52.901785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_arrow" width="23" height="19"/>
+        <image name="icon_questionmark" width="9" height="13"/>
+        <namedColor name="black3">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
