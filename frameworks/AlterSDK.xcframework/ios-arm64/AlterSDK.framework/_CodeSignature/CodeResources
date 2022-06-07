@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		U/NVDyl/sokeDzE8D/V7xeEuwVc=
+		fA/Oqu9Le3QMKbVEO10NL/X5j/o=
 		</data>
 		<key>ColorsCell.nib</key>
 		<data>
-		aLwLQbPLJHz9u1phIcxCKsyu5lQ=
+		X2sTA3f/woKUtOUHGWVtbKIF3MM=
 		</data>
 		<key>Headers/AlterSDK-Swift.h</key>
 		<data>
-		sl2jNjZobJz971PkrovyPErY2Dk=
+		/QC52/1uh6NJ4+wut8E+bs1FRzA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lqRe9yH10KFubcNFPgHG8pJoiNk=
+		t1TXH4gmGoDuCVZ9mrk3bXqcoQA=
 		</data>
 		<key>ItemCell.nib</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>Modules/AlterSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ZCpruOc7LNgL7OVfNo92ZwJ2m0M=
+		0GK/Orl+m3NJqst+5oMPXfGeC/4=
 		</data>
 		<key>Modules/AlterSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		0both9LZc49R+PUe2g1OEYF54ts=
+		qycfoJBDUFho8fgVQw7JQPPkc/E=
 		</data>
 		<key>Modules/AlterSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		urnnvM/JUCrZBCnES5Li8aaPpdI=
+		VfBTBOOIi8Sp6s3iJZyGdvaTFbU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>designer.storyboardc/MPw-V2-r2N-view-Z6U-On-dwD.nib</key>
 		<data>
-		5AqALEdQoeLz+QVdK5l0kk0SA5Q=
+		pW6jQK2om3EzESNEo+Lh/W4DXUw=
 		</data>
 		<key>designer.storyboardc/PresetsViewController.nib</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>designer.storyboardc/VfZ-Ca-lAV-view-Gf3-Tz-obn.nib</key>
 		<data>
-		24LS2NuL41XRb0Ta7H2k/v0UtPc=
+		gp5XZYpD4Jk5oF3nnb/TrE66IVs=
 		</data>
 		<key>designer.storyboardc/q8I-CZ-cbw-view-9X6-bP-lZU.nib</key>
 		<data>
-		esSy4IPE//2ufzjxZcoywdTRyv8=
+		kOkVi2b1Xph+0y5qpRO5yUHpvxM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,21 +83,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Re4n0xmLprggAepFKKEdxSXd6Nda5ccBag/nDjYxFtg=
+			l3CJp2cX5ZrmKB0r34uG+Gw0MGMWsCWCef/xjtkkTfo=
 			</data>
 		</dict>
 		<key>ColorsCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NonBhX/OqWsFfwJoaYpQovA1n2otucrXvrhfTcUlgdw=
+			RD1K4BHAvRfXnZgXxhYSyVvPhSbeBsb0AsENdy8hC40=
 			</data>
 		</dict>
 		<key>Headers/AlterSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dDvu7NZZb609JglTOgohW2Kh/fTQEqbdNPEVVr++68w=
+			g1r4JO7yIjObX2npS1qh3bulVSfCM2rZTsxqlvEepdo=
 			</data>
 		</dict>
 		<key>ItemCell.nib</key>
@@ -118,21 +118,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iUmNvz49e0ec2fifV/84+ZQLalC4Kru/adQaJ9KPHWU=
+			CrE/FtCNTSvLcX7Ug024CaN+Prm/vvJbvC2BFgEOu9s=
 			</data>
 		</dict>
 		<key>Modules/AlterSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KYAZpgujUXS6hn1qgL3aqS0C+vnxzPfEjDng7vP3lPg=
+			BG2q7MywKYlMljOxsdEH6IvSCtZ7yTXr5L6ZVMbUFwM=
 			</data>
 		</dict>
 		<key>Modules/AlterSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ww93AdvLLsjCl+yuMaZ+d9VyjdEnP/3qcLN3Uzgsepo=
+			3UYSt6wi1WPyeU9Lq6hAcMWJ/NDtko4wkL50038K1KQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -174,7 +174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fKTSXXHjQoxRC/aFkjcnIxAAzIoGqooYPugQELnfcfg=
+			3M0WAansqwXaFa9q6iUyaSJRR4TOYUjoPm0BwetJDgQ=
 			</data>
 		</dict>
 		<key>designer.storyboardc/PresetsViewController.nib</key>
@@ -188,14 +188,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KqGb9aOodhzsDTvV2F/vfQ0Dic2DunZzUBXTALP39vE=
+			iIj8eEZU1O89B6XgN0BsMi8Mso15mRL2T6uI5B2oyVI=
 			</data>
 		</dict>
 		<key>designer.storyboardc/q8I-CZ-cbw-view-9X6-bP-lZU.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zTThShT4OZa8v6zJqHswgzzM0+3F9wcM2u8BV2Mqo6A=
+			dmIfUwo1AEj8pwf258J1cv5Q23zXl2n5WiWjPzPe4KY=
 			</data>
 		</dict>
 	</dict>

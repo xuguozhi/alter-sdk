@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name AlterCore
 import AVKit
 
@@ -16,9 +16,6 @@ import UIKit
 import VideoToolbox
 import _Concurrency
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AvatarView : AlterCore.BasicRendererView, AlterCore.AvatarViewInterface {
-  @_Concurrency.MainActor(unsafe) public var _wrappedAvatarViewInterface: Swift.AnyObject {
-    get
-  }
   @_Concurrency.MainActor(unsafe) public var avatar: AlterCore.Avatar?
   @_Concurrency.MainActor(unsafe) public var avatarController: AlterCore.AvatarController?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
@@ -1487,6 +1484,8 @@ extension AlterCore.ImageCube {
   }
   @discardableResult
   public func start(_ frontFacing: Swift.Bool) -> AlterCore.Future<AlterCore.Try<Swift.Void>>
+  @discardableResult
+  public func start() -> AlterCore.Future<AlterCore.Try<Swift.Void>>
   public func addOnFrameListener(_ listener: @escaping (AlterCore.TrackerImage) -> Swift.Void)
   public func changeOrientation(_ newOrientation: AlterCore.UIKUIDeviceOrientation? = nil)
   public func toggleFlash() -> AlterCore.Try<Swift.Void>
