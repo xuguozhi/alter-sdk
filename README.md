@@ -27,7 +27,7 @@ Please star us ⭐⭐⭐ on GitHub—it motivates us a lot!
 
 - iOS 13+
 - - [TestFlight demo](https://testflight.apple.com/join/1n5BT44q)
-- Android 8+ (Soon)
+- Android 8+
 - WebGL 2 (Soon)
 
 See [alter-core](https://github.com/facemoji/alter-core) for detailed technical specifications about the rendering and motion capture.
@@ -96,7 +96,7 @@ repositories {
 
 // ...
 dependencies {
-    implementation "alter:alter-core:0.13.0"
+    implementation "alter:alter-sdk:0.1.2"
 }
 ```
 
